@@ -50,6 +50,7 @@
     }
     .subscribe-box input {
       flex: 1;
+      min-width: 220px;
       padding: 10px;
       border-radius: 5px;
       border: 1px solid #ccc;
@@ -84,6 +85,7 @@
     .card img,
     .card video {
       width: 100%;
+      height: auto;
       display: block;
     }
     .card-content {
@@ -105,6 +107,16 @@
       text-align: center;
       padding: 15px;
       font-size: 13px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      .section-title {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -136,7 +148,7 @@
     <div class="grid">
       <div class="card">
         <video controls>
-          <source src="sample-video-1.mp4" type="video/mp4" />
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="card-content">
@@ -147,7 +159,7 @@
 
       <div class="card">
         <video controls>
-          <source src="sample-video-2.mp4" type="video/mp4" />
+          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
         </video>
         <div class="card-content">
           <h3>Improved Training Facilities</h3>
@@ -159,7 +171,7 @@
     <h2 class="section-title">Photo Gallery</h2>
     <div class="grid">
       <div class="card">
-        <img src="sample-photo-1.jpg" alt="Manvantara Activity" />
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=800&q=60" alt="Manvantara Activity" />
         <div class="card-content">
           <h3>Workshop Moments</h3>
           <p>Highlights from our recent workshops and sessions.</p>
@@ -167,7 +179,7 @@
       </div>
 
       <div class="card">
-        <img src="sample-photo-2.jpg" alt="Manvantara Improvement" />
+        <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=60" alt="Manvantara Improvement" />
         <div class="card-content">
           <h3>Community Growth</h3>
           <p>Our growing family and positive transformation stories.</p>
